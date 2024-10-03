@@ -1,10 +1,7 @@
 package org.demo.optional;
 
 import org.demo.util.Employee;
-import org.demo.util.EmployeesUtil;
-
 import java.math.BigDecimal;
-import java.util.List;
 
 public class WhyOptional {
 
