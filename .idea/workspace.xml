@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="082cfec3-6fbf-47e0-be3e-75a3926a72dd" name="Changes" comment="" />
+    <list default="true" id="082cfec3-6fbf-47e0-be3e-75a3926a72dd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FunctionalInterfaceAndLambda/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FunctionalInterfaceAndLambda/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FunctionalInterfaceAndLambda/src/main/java/org/demo/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,16 +17,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2mrqtQAmv2BuihQihRQhXxB2sYy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true"
   }
@@ -37,5 +45,8 @@
       <updated>1727845265803</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
