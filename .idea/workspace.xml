@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="082cfec3-6fbf-47e0-be3e-75a3926a72dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CollectionsFramework/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollectionsFramework/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollectionsFramework/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollectionsFramework/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollectionsFramework/src/main/java/org/demo/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="082cfec3-6fbf-47e0-be3e-75a3926a72dd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
