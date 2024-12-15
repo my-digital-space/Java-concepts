@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Logging
+
+server:
+  port: 9191
+
+#logging:
+#  level:
+#    com:
+#      demo:
+#        Logging:
+#          controller: DEBUG
+
+#logging:
+#  level:
+#    root: OFF
+

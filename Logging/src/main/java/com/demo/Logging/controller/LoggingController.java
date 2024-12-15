@@ -24,6 +24,17 @@ public class LoggingController {
         logger.debug("Debug");
         logger.trace("Trace");
 
+//        String myMethod = "printLogLevels";
+//        Integer myPriority = 2;
+//        logger.info("My current method {} is a non-static method with {} as priority.", myMethod, myPriority);
+
+
+//        try {
+//            throw new RuntimeException("My Exception");
+//        } catch (Exception ex) {
+//            logger.error("MyEx: ", ex);
+//        }
+
         return new ResponseEntity<>("Logging Successful!", HttpStatus.OK);
     }
 
