@@ -5,6 +5,12 @@ spring:
 server:
   port: 9191
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,loggers"
+
 #logging:
 #  level:
 #    com:
