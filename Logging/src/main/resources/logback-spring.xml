@@ -16,16 +16,19 @@
 
     </appender>
 
+    <!-- Expose the 'spring.application.name' property -->
+    <springProperty name="appName" source="spring.application.name"/>
+
     <appender name="myConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>
-                %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+                %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} [${appName}] - %msg%n
             </pattern>
         </encoder>
     </appender>
 
     <root level="INFO">
-        <appender-ref ref="myFileAppender"/>
+<!--        <appender-ref ref="myFileAppender"/>-->
         <appender-ref ref="myConsoleAppender"/>
     </root>
 </configuration>
