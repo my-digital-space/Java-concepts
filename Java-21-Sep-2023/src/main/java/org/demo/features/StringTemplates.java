@@ -9,7 +9,14 @@ public class StringTemplates {
 
         // Using a string template
         String message = STR."Hello, \{name}. You are \{age} years old.";
-        System.out.println(message);
+        //System.out.println(message);
+
+        String multilineMessage = STR."""
+                    Dear \{name},
+                    Welcome to our platform.
+                    Age: \{age}
+                """;
+        System.out.println(multilineMessage);
     }
 }
 
