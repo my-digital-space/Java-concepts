@@ -52,19 +52,32 @@ public class Main {
          * When a singleton implements Serializable,
          * deserializing it can create a new instance
          */
+//        try {
+//            MyCustomSingleton instance1 = MyCustomSingleton.getInstance();
+//
+//            // Serialize to a file.
+//            ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("singleton.ser"));
+//            out.writeObject(instance1);
+//            out.close();
+//
+//            // Deserialize from file.
+//            ObjectInputStream in = new ObjectInputStream(new FileInputStream("singleton.ser"));
+//            MyCustomSingleton instance2 = (MyCustomSingleton) in.readObject();
+//            in.close();
+//
+//            instance1.printHashCode();
+//            instance2.printHashCode();
+//        } catch(Exception e) {
+//            e.printStackTrace();
+//        }
+
+        /**
+         * Code to demonstrate
+         * how cloning can create a new instance
+         */
         try {
             MyCustomSingleton instance1 = MyCustomSingleton.getInstance();
-
-            // Serialize to a file.
-            ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("singleton.ser"));
-            out.writeObject(instance1);
-            out.close();
-
-            // Deserialize from file.
-            ObjectInputStream in = new ObjectInputStream(new FileInputStream("singleton.ser"));
-            MyCustomSingleton instance2 = (MyCustomSingleton) in.readObject();
-            in.close();
-
+            MyCustomSingleton instance2 = instance1.clone();
             instance1.printHashCode();
             instance2.printHashCode();
         } catch(Exception e) {
