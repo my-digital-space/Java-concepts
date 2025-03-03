@@ -1,5 +1,9 @@
 package org.demo.singleton;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.lang.reflect.Constructor;
 
 public class Main {
@@ -29,13 +33,37 @@ public class Main {
          * Code to demonstrate how using Reflection we can
          * bypass the private constructor
          */
-        MyCustomSingleton instance1 = MyCustomSingleton.getInstance();
-        MyCustomSingleton instance2 = null;
+//        MyCustomSingleton instance1 = MyCustomSingleton.getInstance();
+//        MyCustomSingleton instance2 = null;
+//        try {
+//            Constructor<MyCustomSingleton> constructor =
+//                    MyCustomSingleton.class.getDeclaredConstructor();
+//            constructor.setAccessible(true);        // Bypass private access
+//            instance2 = constructor.newInstance();  // Creates new instance!
+//
+//            instance1.printHashCode();
+//            instance2.printHashCode();
+//        } catch(Exception e) {
+//            e.printStackTrace();
+//        }
+
+        /**
+         * Code to demonstrate
+         * When a singleton implements Serializable,
+         * deserializing it can create a new instance
+         */
         try {
-            Constructor<MyCustomSingleton> constructor =
-                    MyCustomSingleton.class.getDeclaredConstructor();
-            constructor.setAccessible(true);        // Bypass private access
-            instance2 = constructor.newInstance();  // Creates new instance!
+            MyCustomSingleton instance1 = MyCustomSingleton.getInstance();
+
+            // Serialize to a file.
+            ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("singleton.ser"));
+            out.writeObject(instance1);
+            out.close();
+
+            // Deserialize from file.
+            ObjectInputStream in = new ObjectInputStream(new FileInputStream("singleton.ser"));
+            MyCustomSingleton instance2 = (MyCustomSingleton) in.readObject();
+            in.close();
 
             instance1.printHashCode();
             instance2.printHashCode();
